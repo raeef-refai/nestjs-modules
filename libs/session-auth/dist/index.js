@@ -16,5 +16,6 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./session-auth.decorator"), exports);
 __exportStar(require("./session-auth.guard"), exports);
+__exportStar(require("./session-auth.interface"), exports);
 __exportStar(require("./session-auth.module"), exports);
 //# sourceMappingURL=index.js.map
