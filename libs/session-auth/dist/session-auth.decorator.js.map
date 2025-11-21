@@ -1,0 +1,1 @@
+{"version":3,"file":"session-auth.decorator.js","sourceRoot":"","sources":["../src/session-auth.decorator.ts"],"names":[],"mappings":";;;AAAA,2CAA6C;AAC7C,6DAG8B;AAEvB,MAAM,2BAA2B,GAAG,GAAG,EAAE,CAC9C,IAAA,oBAAW,EAAC,wDAAmC,EAAE,IAAI,CAAC,CAAC;AAD5C,QAAA,2BAA2B,+BACiB;AAElD,MAAM,uBAAuB,GAAG,GAAG,EAAE,CAC1C,IAAA,oBAAW,EAAC,oDAA+B,EAAE,IAAI,CAAC,CAAC;AADxC,QAAA,uBAAuB,2BACiB"}

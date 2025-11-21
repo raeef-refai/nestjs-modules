@@ -1,0 +1,30 @@
+{
+  "name": "@raeef-refai/nestjs-session-auth",
+  "version": "2.0.3",
+  "private": false,
+  "homepage": "https://github.com/raeef-refai/nestjs-modules#readme",
+  "bugs": {
+    "url": "https://github.com/raeef-refai/nestjs-modules/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raeef-refai/nestjs-modules.git"
+  },
+  "license": "MIT",
+  "author": "Mohamad Raeef Alrefai",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "!**/*.json",
+    "!**/*.tsbuildinfo"
+  ],
+  "peerDependencies": {
+    "@nestjs/common": "11.x",
+    "@nestjs/core": "11.x",
+    "express-session": "1.x"
+  },
+  "devDependencies": {
+    "@types/express-session": "^1.18.2"
+  }
+}

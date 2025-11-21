@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true
+  },
+  "defaultLibraryPrefix": "@nestjs-modules",
+  "projects": {
+    "session-auth": {
+      "type": "library",
+      "root": "libs/session-auth",
+      "entryFile": "index",
+      "sourceRoot": "libs/session-auth/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/session-auth/tsconfig.lib.json"
+      }
+    }
+  }
+}
