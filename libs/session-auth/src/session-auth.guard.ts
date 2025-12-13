@@ -14,8 +14,7 @@ import {
 
 @Injectable()
 export class SessionGuard implements CanActivate {
-  @Inject()
-  private readonly reflector!: Reflector;
+  constructor(private readonly reflector: Reflector) {}
 
   canActivate(context: ExecutionContext): boolean {
     const authenticationIgnored = this.reflector.getAllAndOverride<boolean>(
