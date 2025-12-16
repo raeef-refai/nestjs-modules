@@ -15,6 +15,9 @@ const core_1 = require("@nestjs/core");
 const session_auth_token_1 = require("./session-auth.token");
 let SessionGuard = class SessionGuard {
     reflector;
+    constructor(reflector) {
+        this.reflector = reflector;
+    }
     canActivate(context) {
         const authenticationIgnored = this.reflector.getAllAndOverride(session_auth_token_1.IGNORE_SESSION_AUTHENTICATION_TOKEN, [context.getHandler(), context.getClass()]);
         if (authenticationIgnored)
@@ -29,11 +32,8 @@ let SessionGuard = class SessionGuard {
     }
 };
 exports.SessionGuard = SessionGuard;
-__decorate([
-    (0, common_1.Inject)(),
-    __metadata("design:type", core_1.Reflector)
-], SessionGuard.prototype, "reflector", void 0);
 exports.SessionGuard = SessionGuard = __decorate([
-    (0, common_1.Injectable)()
+    (0, common_1.Injectable)(),
+    __metadata("design:paramtypes", [core_1.Reflector])
 ], SessionGuard);
 //# sourceMappingURL=session-auth.guard.js.map
